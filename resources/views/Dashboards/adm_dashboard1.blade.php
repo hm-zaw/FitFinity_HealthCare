@@ -29,7 +29,7 @@
     <link rel="icon" href="{{ Vite::asset('assets/images/logo/logo.svg') }}"/>
 
     <!-- Title -->
-    <title> FitFinity | Admin Dashboard </title>
+    <title> FitFinity | fnpmAdmin Dashboard </title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- Favicon -->

@@ -57,7 +57,6 @@
             }
         }
     </style>
-    <?php echo app('Illuminate\Foundation\Vite')(['resources/css/app.css', 'resources/js/app.js']); ?>
 </head>
 <body class="custom-font bg-gray-50" >
 <div class="min-h-screen w-full flex flex-col place-content-center items-center justify-center bg-gray-50">

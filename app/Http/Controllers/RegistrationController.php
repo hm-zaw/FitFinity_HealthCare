@@ -405,7 +405,7 @@ class RegistrationController extends Controller
 
     public function create_login()
     {
-        return view('auth.login');
+        return view('auth.log_in');
     }
 
     public function check()
