@@ -22,23 +22,23 @@
     <link rel="stylesheet" href="{{ Vite::asset('assets/css/animate.css') }}" />
     <link rel="stylesheet" href="{{ Vite::asset('assets/css/tiny-slider.css') }}" />
     <link rel="stylesheet" href="{{ Vite::asset('assets/css/main.css') }}" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-@vite(['resources/css/app.css', 'resources/js/app.js'])
 <body>
 
 <!-- ========================= header start ========================= -->
 <header id="home" class="header">
     <div class="header-wrapper">
-        <div class="header-top theme-bg py-2">
-            <div class="mx-auto max-w-screen-lg px-4">
-                <div class="flex flex-wrap -mx-4 items-center">
-                    <div class="w-full md:w-2/3 text-center text-md-left">
+        <div class="py-2 header-top theme-bg">
+            <div class="max-w-screen-lg px-4 mx-auto">
+                <div class="flex flex-wrap items-center -mx-4">
+                    <div class="w-full text-center md:w-2/3 text-md-left">
                         <ul class="flex justify-center md:justify-start">
                             <li class="mr-4"><a href="#"><i class="lni lni-phone"></i> +959985056890</a></li>
                             <li><a href="#"><i class="lni lni-envelope"></i> fitfinity@gmail.com </a></li>
                         </ul>
                     </div>
-                    <div class="w-full md:w-1/3 text-right">
+                    <div class="w-full text-right md:w-1/3">
                         <ul class="flex justify-center md:justify-end">
                             <li class="mr-2"><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
                             <li class="mr-2"><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="navbar-area">
-            <div class="mx-auto max-w-screen-lg px-2">
+            <div class="max-w-screen-lg px-2 mx-auto">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand d-flex align-items-center" href="#">
                         <img style="width: 40px" src="{{ Vite::asset('assets/images/logo/MainLogosvg.svg') }}" alt="Logo" />
@@ -70,14 +70,14 @@
                         <span class="toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse sub-menu-bar flex flex-row items-center" id="navbarSupportedContent">
-                        <ul id="nav" class="navbar-nav ml-auto">
-                            <li class="nav-item my-auto"><a class="page-scroll active" href="#">Home</a></li>
-                            <li class="nav-item my-auto"><a class="page-scroll" href="#">About</a></li>
-                            <li class="nav-item my-auto"><a target="_blank" href="#">BMI</a></li>
-                            <li class="nav-item my-auto"><a target="_blank" href="#">Diagnosis</a></li>
-                            <li class="nav-item my-auto"><a target="_blank" href="#">Contact</a></li>
-                            <li class="nav-item my-auto"><a href="#">Login</a></li>
+                    <div class="flex flex-row items-center collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                        <ul id="nav" class="ml-auto navbar-nav">
+                            <li class="my-auto nav-item"><a class="page-scroll active" href="#">Home</a></li>
+                            <li class="my-auto nav-item"><a class="page-scroll" href="#">About</a></li>
+                            <li class="my-auto nav-item"><a target="_blank" href="#">BMI</a></li>
+                            <li class="my-auto nav-item"><a target="_blank" href="#">Diagnosis</a></li>
+                            <li class="my-auto nav-item"><a target="_blank" href="#">Contact</a></li>
+                            <li class="my-auto nav-item"><a href="#">Login</a></li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">
                                     <button class="signUpbtn">SignUp</button>
@@ -103,10 +103,10 @@
     <div class="shape shape-1">
         <img src="{{ Vite::asset('assets/images/shapes/shape-1.svg') }}" alt="" />
     </div>
-    <div class="mx-auto max-w-screen-lg px-4">
+    <div class="max-w-screen-lg px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
-            <div class="col-xl-8 mx-auto">
-                <div class="section-title text-center mb-55">
+            <div class="mx-auto col-xl-8">
+                <div class="text-center section-title mb-55">
                     <span class="wow fadeInDown" data-wow-delay=".2s">What We Do</span>
                     <h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">
                         What We Provide for Your Health
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="we-do-item mx-auto">
+                <div class="mx-auto we-do-item">
                     <div class="we-do-icon mb-25">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40.839" height="48.598" viewBox="0 0 40.839 48.598">
                             <g id="we-do-1" transform="translate(-12.184 -5)">
@@ -203,10 +203,10 @@
     <div class="shape shape-2">
         <img src="{{ Vite::asset('assets/images/shapes/shape-2.svg') }}" alt="" />
     </div>
-    <div class="mx-auto max-w-screen-lg px-4">
+    <div class="max-w-screen-lg px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
-            <div class="col-xl-10 col-lg-11 mx-auto">
-                <div class="about-content text-center mb-55">
+            <div class="mx-auto col-xl-10 col-lg-11">
+                <div class="text-center about-content mb-55">
                     <div class="section-title mb-30">
                         <span class="wow fadeInDown" data-wow-delay=".2s" >About Us</span>
                         <h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">
@@ -219,7 +219,7 @@
             </div>
         </div>
     </div>
-    <div class="about-img text-center">
+    <div class="text-center about-img">
         <img src="{{ Vite::asset('assets/images/about/about-img.png') }}" alt="" />
     </div>
 </section>
@@ -229,10 +229,10 @@
     <div class="shape shape-3">
         <img src="{{ Vite::asset('assets/images/shapes/shape-3.svg') }}" alt="" />
     </div>
-    <div class="mx-auto max-w-screen-lg px-4">
+    <div class="max-w-screen-lg px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
-            <div class="col-xl-8 mx-auto">
-                <div class="section-title text-center mb-55">
+            <div class="mx-auto col-xl-8">
+                <div class="text-center section-title mb-55">
                     <span class="wow fadeInDown" data-wow-delay=".2s">Services</span>
                     <h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">
                         Our Healthcare Services
@@ -244,7 +244,7 @@
             </div>
         </div>
         <div class="flex flex-wrap -mx-4">
-            <div class="col-lg-4 w-full md:w-1/2 px-4">
+            <div class="w-full px-4 col-lg-4 md:w-1/2">
                 <div class="service-item mb-30">
                     <div class="service-icon mb-25">
                         <svg xmlns="http://www.w3.org/2000/svg" width="79.557" height="57.882" viewBox="0 0 79.557 57.882">
@@ -268,7 +268,7 @@
                     <div class="service-overlay img-bg"></div>
                 </div>
             </div>
-            <div class="col-lg-4 w-full md:w-1/2 px-4">
+            <div class="w-full px-4 col-lg-4 md:w-1/2">
                 <div class="service-item mb-30">
                     <div class="service-icon mb-25">
                         <svg xmlns="http://www.w3.org/2000/svg" width="57.792" height="58.716" viewBox="0 0 57.792 58.716">
@@ -288,7 +288,7 @@
                     <div class="service-overlay img-bg"></div>
                 </div>
             </div>
-            <div class="col-lg-4 w-full md:w-1/2 px-4">
+            <div class="w-full px-4 col-lg-4 md:w-1/2">
                 <div class="service-item mb-30">
                     <div class="service-icon mb-25">
                         <svg xmlns="http://www.w3.org/2000/svg" width="51.275" height="58.44" viewBox="0 0 51.275 58.44" >
@@ -308,7 +308,7 @@
                     <div class="service-overlay img-bg"></div>
                 </div>
             </div>
-            <div class="col-lg-4 w-full md:w-1/2 px-4">
+            <div class="w-full px-4 col-lg-4 md:w-1/2">
                 <div class="service-item mb-30">
                     <div class="service-icon mb-25">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48.362" height="58.163" viewBox="0 0 48.362 75.163">
@@ -326,7 +326,7 @@
                     <div class="service-overlay img-bg"></div>
                 </div>
             </div>
-            <div class="col-lg-4 w-full md:w-1/2 px-4">
+            <div class="w-full px-4 col-lg-4 md:w-1/2">
                 <div class="service-item mb-30">
                     <div class="service-icon mb-25">
                         <svg xmlns="http://www.w3.org/2000/svg" width="43.302" height="58.633" viewBox="0 0 43.302 58.633" >
@@ -345,7 +345,7 @@
                     <div class="service-overlay img-bg"></div>
                 </div>
             </div>
-            <div class="col-lg-4 w-full md:w-1/2 px-4">
+            <div class="w-full px-4 col-lg-4 md:w-1/2">
                 <div class="service-item mb-30">
                     <div class="service-icon mb-25">
                         <img src="{{ Vite::asset('assets/images/service/throat.svg') }}" width="57.6" height="67.8" alt="logo">
@@ -383,7 +383,7 @@
                         </h2>
                     </div>
                     <div class="faq-wrapper accordion" id="accordionExample">
-                        <div class="faq-item mb-20">
+                        <div class="mb-20 faq-item">
                             <div id="headingOne">
                                 <h5 class="mb-0">
                                     <button class="faq-btn btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
@@ -398,7 +398,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-item mb-20">
+                        <div class="mb-20 faq-item">
                             <div id="headingTwo">
                                 <h5 class="mb-0">
                                     <button class="faq-btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" >
@@ -413,7 +413,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-item mb-20">
+                        <div class="mb-20 faq-item">
                             <div id="headingThree">
                                 <h5 class="mb-0">
                                     <button class="faq-btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" >
@@ -454,7 +454,7 @@
 </section>
 <!-- ========================= subscribe-section start ========================= -->
 <section class="subscribe-section pt-100 pb-100 img-bg" style="background-image: url(../../../assets/images/bg/subscribe-bg.jpg)">
-    <div class="mx-auto max-w-screen-lg px-4">
+    <div class="max-w-screen-lg px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
             <div class="col-xl-7">
                 <div class="section-title">
@@ -468,9 +468,9 @@
                 <div class="subscribe-wrapper">
                     <form action="#" class="subscribe-from">
                         <input type="text" name="subscribe" id="subscribe" placeholder="Enter Your Email" />
-                        <button class=" theme-">Subscribe</button>
+                        <button class="theme-btn">Subscribe</button>
                     </form>
-                    <div class="support flex">
+                    <div class="flex support">
                         <div class="support-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="57.473" height="56.533" viewBox="0 0 57.473 56.533" >
                                 <g id="noun_customer_service_2786300" data-name="noun_customer service_2786300" transform="translate(-11.49 -12.11)" >
@@ -506,10 +506,10 @@
     <div class="shape shape-7">
         <img src="{{ Vite::asset('assets/images/shapes/shape-6.svg') }}" alt="" />
     </div>
-    <div class="mx-auto max-w-screen-lg px-4">
+    <div class="max-w-screen-lg px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
-            <div class="col-xl-8 mx-auto">
-                <div class="section-title text-center mb-55">
+            <div class="mx-auto col-xl-8">
+                <div class="text-center section-title mb-55">
                     <span class="wow fadeInDown" data-wow-delay=".2s"> Blog Post </span>
                     <h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s"> Latest News </h2>
                     <p class="wow fadeInUp" data-wow-delay=".4s"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy <br class="d-none d-lg-block" /> eirmod tempor invidunt ut labore et dolore magn. </p>
@@ -517,7 +517,7 @@
             </div>
         </div>
         <div class="flex flex-wrap -mx-4">
-            <div class="col-xl-4 col-lg-4 w-full md:w-1/2 px-4">
+            <div class="w-full px-4 col-xl-4 col-lg-4 md:w-1/2">
                 <div class="single-blog mb-30 wow fadeInUp" data-wow-delay=".2s">
                     <div class="blog-img">
                         <a href="#"><img src="{{ Vite::asset('assets/images/blog/blog-1.png') }}" alt="" /></a>
@@ -529,7 +529,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 w-full md:w-1/2 px-4">
+            <div class="w-full px-4 col-xl-4 col-lg-4 md:w-1/2">
                 <div class="single-blog mb-30 wow fadeInUp" data-wow-delay=".4s">
                     <div class="blog-img">
                         <a href="#"><img src="{{ Vite::asset('assets/images/blog/blog-2.png') }}" alt="" /></a>
@@ -541,7 +541,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 w-full md:w-1/2 px-4">
+            <div class="w-full px-4 col-xl-4 col-lg-4 md:w-1/2">
                 <div class="single-blog mb-30 wow fadeInUp" data-wow-delay=".6s">
                     <div class="blog-img">
                         <a href="#"><img src="{{ Vite::asset('assets/images/blog/blog-3.png') }}" alt="" /></a>
@@ -558,10 +558,10 @@
 </section>
 
 <footer class="footer pt-100 img-bg" style="background-image: url('../../../assets/images/bg/footer-bg.jpg')">
-    <div class="mx-auto max-w-screen-lg px-4">
+    <div class="max-w-screen-lg px-4 mx-auto">
         <div class="footer-widget-wrapper">
             <div class="flex flex-wrap -mx-4">
-                <div class="col-xl-4 col-lg-5 w-full md:w-1/2 px-4">
+                <div class="w-full px-4 col-xl-4 col-lg-5 md:w-1/2">
                     <div class="footer-widget mb-30">
                         <a href="index.html" class="logo"><img src="{{ Vite::asset('assets/images/logo/logo.svg') }}" alt=""/></a>
                         <p> Lorem ipsum dolor serit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolore magna aliquyam erat diam voluptua. </p>
@@ -575,7 +575,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-3 w-full md:w-1/2 px-4">
+                <div class="w-full px-4 col-xl-2 col-lg-3 md:w-1/2">
                     <div class="footer-widget mb-30">
                         <h4>Quick Link</h4>
                         <ul class="footer-links">
