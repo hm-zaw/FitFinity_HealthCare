@@ -8,7 +8,7 @@
     <title>FitFinity | Login</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 
-    <link rel="icon" href="{{ Vite::asset('assets/images/logo/logo.svg') }}"/>
+    <link rel="icon" href="{{ asset('assets/images/logo/logo.svg') }}"/>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>

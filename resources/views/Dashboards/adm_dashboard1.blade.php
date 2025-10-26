@@ -26,7 +26,7 @@
     <meta property="og:title" content="Tailwind CSS Admin Template | Preline UI, crafted with Tailwind CSS">
     <meta property="og:description" content="Comprehensive overview with charts, tables, and a streamlined dashboard layout for easy data visualization and analysis.">
     <meta property="og:image" content="https://preline.co/assets/img/og-image.png">
-    <link rel="icon" href="{{ Vite::asset('assets/images/logo/logo.svg') }}"/>
+    <link rel="icon" href="{{ asset('assets/images/logo/logo.svg') }}"/>
 
     <!-- Title -->
     <title> FitFinity | fnpmAdmin Dashboard </title>
@@ -194,7 +194,7 @@
         <!-- Logo -->
         <div class="px-1 pt-2 flex flex-row items-center">
             <a class="rounded-xl mt-4 text-xl flex flex-row items-center font-semibold focus:outline-none focus:opacity-80" href="#">
-                <img src="{{ Vite::asset('assets/images/logo/logo.svg') }}" class="w-[35px] h-[35px] ml-3 mx-2" alt="logo">
+                <img src="{{ asset('assets/images/logo/logo.svg') }}" class="w-[35px] h-[35px] ml-3 mx-2" alt="logo">
                 <h2 class="font-bold text-[24px]">FitFinity</h2>
             </a>
         </div>

@@ -17,11 +17,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" ></script>
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/bootstrap-5.0.5-alpha.min.css') }}" />
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/LineIcons.2.0.css') }}" />
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/animate.css') }}" />
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/tiny-slider.css') }}" />
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-5.0.5-alpha.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/LineIcons.2.0.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/tiny-slider.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
@@ -52,7 +52,7 @@
             <div class="max-w-screen-lg px-2 mx-auto">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand d-flex align-items-center" href="#">
-                        <img style="width: 40px" src="{{ Vite::asset('assets/images/logo/MainLogosvg.svg') }}" alt="Logo" />
+                        <img style="width: 40px" src="{{ asset('assets/images/logo/MainLogosvg.svg') }}" alt="Logo" />
                         <div class="ml-2">
                             <h4 style="display: inline; font-size: 1rem;">
                                 <span style="color: #0bb288; font-family: 'Nunito', sans-serif; font-weight: 700;">FitFinity</span>
@@ -101,7 +101,7 @@
 <!--========================= we-do-section start========================= -->
 <section class="we-do-section pt-150">
     <div class="shape shape-1">
-        <img src="{{ Vite::asset('assets/images/shapes/shape-1.svg') }}" alt="" />
+        <img src="{{ asset('assets/images/shapes/shape-1.svg') }}" alt="" />
     </div>
     <div class="max-w-screen-lg px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
@@ -118,7 +118,7 @@
         <div class="flex flex-wrap -mx-4">
             <div class="col-xl-12">
                 <div class="graph mb-60">
-                    <img src="{{ Vite::asset('assets/images/we-do/graph-img.svg') }}" alt="" />
+                    <img src="{{ asset('assets/images/we-do/graph-img.svg') }}" alt="" />
                 </div>
             </div>
             <div class="col-lg-3">
@@ -201,7 +201,7 @@
 <!-- ========================= about-section start ========================= -->
 <section id="about" class="about-section pt-120">
     <div class="shape shape-2">
-        <img src="{{ Vite::asset('assets/images/shapes/shape-2.svg') }}" alt="" />
+        <img src="{{ asset('assets/images/shapes/shape-2.svg') }}" alt="" />
     </div>
     <div class="max-w-screen-lg px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
@@ -220,14 +220,14 @@
         </div>
     </div>
     <div class="text-center about-img">
-        <img src="{{ Vite::asset('assets/images/about/about-img.png') }}" alt="" />
+        <img src="{{ asset('assets/images/about/about-img.png') }}" alt="" />
     </div>
 </section>
 
 <!--========================= service-section start ========================= -->
 <section id="services" class="service-section pt-150">
     <div class="shape shape-3">
-        <img src="{{ Vite::asset('assets/images/shapes/shape-3.svg') }}" alt="" />
+        <img src="{{ asset('assets/images/shapes/shape-3.svg') }}" alt="" />
     </div>
     <div class="max-w-screen-lg px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
@@ -348,7 +348,7 @@
             <div class="w-full px-4 col-lg-4 md:w-1/2">
                 <div class="service-item mb-30">
                     <div class="service-icon mb-25">
-                        <img src="{{ Vite::asset('assets/images/service/throat.svg') }}" width="57.6" height="67.8" alt="logo">
+                        <img src="{{ asset('assets/images/service/throat.svg') }}" width="57.6" height="67.8" alt="logo">
                     </div>
                     <div class="service-content">
                         <h4>Otolaryngology</h4>
@@ -366,11 +366,11 @@
 <section class="faq-section theme-bg">
     <div class="faq-video-wrapper">
         <div class="faq-video">
-            <img src="{{ Vite::asset('assets/image/faq/faq-img.jpg') }}" alt="" />
+            <img src="{{ asset('assets/image/faq/faq-img.jpg') }}" alt="" />
         </div>
     </div>
     <div class="shape">
-        <img src="{{ Vite::asset('assets/image/shapes/shape-8.svg') }}" alt="" class="shape-faq" />
+        <img src="{{ asset('assets/image/shapes/shape-8.svg') }}" alt="" class="shape-faq" />
     </div>
     <div class="container">
         <div class="row">
@@ -504,7 +504,7 @@
 <!-- ========================= blog-section start ========================= -->
 <section id="blog" class="blog-section pt-150">
     <div class="shape shape-7">
-        <img src="{{ Vite::asset('assets/images/shapes/shape-6.svg') }}" alt="" />
+        <img src="{{ asset('assets/images/shapes/shape-6.svg') }}" alt="" />
     </div>
     <div class="max-w-screen-lg px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
@@ -520,7 +520,7 @@
             <div class="w-full px-4 col-xl-4 col-lg-4 md:w-1/2">
                 <div class="single-blog mb-30 wow fadeInUp" data-wow-delay=".2s">
                     <div class="blog-img">
-                        <a href="#"><img src="{{ Vite::asset('assets/images/blog/blog-1.png') }}" alt="" /></a>
+                        <a href="#"><img src="{{ asset('assets/images/blog/blog-1.png') }}" alt="" /></a>
                     </div>
                     <div class="blog-content">
                         <h4><a href="#">250+ Medical Tips We Just Had to Share</a></h4>
@@ -532,7 +532,7 @@
             <div class="w-full px-4 col-xl-4 col-lg-4 md:w-1/2">
                 <div class="single-blog mb-30 wow fadeInUp" data-wow-delay=".4s">
                     <div class="blog-img">
-                        <a href="#"><img src="{{ Vite::asset('assets/images/blog/blog-2.png') }}" alt="" /></a>
+                        <a href="#"><img src="{{ asset('assets/images/blog/blog-2.png') }}" alt="" /></a>
                     </div>
                     <div class="blog-content">
                         <h4><a href="#">100+ Medical Tips We Just Had to Share</a></h4>
@@ -544,7 +544,7 @@
             <div class="w-full px-4 col-xl-4 col-lg-4 md:w-1/2">
                 <div class="single-blog mb-30 wow fadeInUp" data-wow-delay=".6s">
                     <div class="blog-img">
-                        <a href="#"><img src="{{ Vite::asset('assets/images/blog/blog-3.png') }}" alt="" /></a>
+                        <a href="#"><img src="{{ asset('assets/images/blog/blog-3.png') }}" alt="" /></a>
                     </div>
                     <div class="blog-content">
                         <h4><a href="#">250+ Medical Tips We Just Had to Share</a></h4>
@@ -563,7 +563,7 @@
             <div class="flex flex-wrap -mx-4">
                 <div class="w-full px-4 col-xl-4 col-lg-5 md:w-1/2">
                     <div class="footer-widget mb-30">
-                        <a href="index.html" class="logo"><img src="{{ Vite::asset('assets/images/logo/logo.svg') }}" alt=""/></a>
+                        <a href="index.html" class="logo"><img src="{{ asset('assets/images/logo/logo.svg') }}" alt=""/></a>
                         <p> Lorem ipsum dolor serit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolore magna aliquyam erat diam voluptua. </p>
                         <div class="footer-social-links">
                             <ul>
@@ -629,9 +629,9 @@
 </a>
 
 <!-- ========================= JS here ========================= -->
-<script src="{{ Vite::asset('assets/js/bootstrap.bundle-5.0.0.alpha-min.js') }}"></script>
-<script src="{{ Vite::asset('assets/js/wow.min.js') }}"></script>
-<script src="{{ Vite::asset('assets/js/tiny-slider.js') }}"></script>
-<script src="{{ Vite::asset('assets/js/main.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle-5.0.0.alpha-min.js') }}"></script>
+<script src="{{ asset('assets/js/wow.min.js') }}"></script>
+<script src="{{ asset('assets/js/tiny-slider.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 </html>

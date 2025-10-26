@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" href="{{ Vite::asset('assets/images/logo/logo.svg') }}" />
+    <link rel="icon" href="{{ asset('assets/images/logo/logo.svg') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Place favicon.ico in the root directory -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet"/>
@@ -160,11 +160,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/bootstrap-5.0.5-alpha.min.css') }}" />
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/LineIcons.2.0.css') }}" />
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/animate.css') }}" />
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/tiny-slider.css') }}" />
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-5.0.5-alpha.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/LineIcons.2.0.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/tiny-slider.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
 </head>
 <body>
 
@@ -194,7 +194,7 @@
                     <div class="mx-auto max-w-screen-lg px-2">
                         <nav class="navbar navbar-expand-lg">
                             <a class="-ml-20 navbar-brand d-flex align-items-center" href="#">
-                                <img style="width: 40px" src="{{ Vite::asset('assets/images/logo/MainLogosvg.svg') }}"
+                                <img style="width: 40px" src="{{ asset('assets/images/logo/MainLogosvg.svg') }}"
                                      alt="Logo"/>
                                 <div class="ml-2">
                                     <h4 style="display: inline; font-size: 1rem;">
@@ -279,7 +279,7 @@
                     <div class="mx-auto max-w-screen-lg px-2">
                         <nav class="navbar navbar-expand-lg">
                             <a class="-ml-20 mt-1 -mb-1 navbar-brand d-flex align-items-center" href="#">
-                                <img style="width: 40px" src="{{ Vite::asset('assets/images/logo/MainLogosvg.svg') }}"
+                                <img style="width: 40px" src="{{ asset('assets/images/logo/MainLogosvg.svg') }}"
                                      alt="Logo"/>
                                 <div class="ml-2">
                                     <h4 style="display: inline; font-size: 1rem;">
@@ -369,7 +369,7 @@
                                     <span style="font-size: 13px" class="text-gray-700 mb-1">Role: <span class="text-right">{{ $dd -> role_name }}</span></span>
                                     <span style="font-size: 11px" class="text-gray-700 mb-1 font-semibold">{{ $dd -> qualifications }}</span>
                                 </div>
-                                <img class="user-img w-1/3" src="{{ (Str::startsWith($dd->doctor_name, 'U')) ? Vite::asset('assets/images/doctorProfile/maleDr.png') : Vite::asset('assets/images/doctorProfile/femaleDr.png') }}" alt="Doctor Image" />
+                                <img class="user-img w-1/3" src="{{ (Str::startsWith($dd->doctor_name, 'U')) ? asset('assets/images/doctorProfile/maleDr.png') : asset('assets/images/doctorProfile/femaleDr.png') }}" alt="Doctor Image" />
                             </div>
                         </div>
                     @endforeach

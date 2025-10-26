@@ -25,7 +25,7 @@
                 <div class="mx-auto max-w-screen-lg px-2">
                     <nav class="navbar navbar-expand-lg">
                         <a class="-ml-20 navbar-brand d-flex align-items-center" href="#">
-                            <img style="width: 40px" src="{{ Vite::asset('assets/images/logo/MainLogosvg.svg') }}"
+                            <img style="width: 40px" src="{{ asset('assets/images/logo/MainLogosvg.svg') }}"
                                  alt="Logo"/>
                             <div class="ml-2">
                                 <h4 style="display: inline; font-size: 1rem;">

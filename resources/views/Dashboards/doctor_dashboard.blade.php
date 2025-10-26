@@ -29,7 +29,7 @@
 
     <!-- Title -->
     <title> FitFinity | Doctor Dashboard </title>
-    <link rel="icon" href="{{ Vite::asset('assets/images/logo/logo.svg') }}"/>
+    <link rel="icon" href="{{ asset('assets/images/logo/logo.svg') }}"/>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -193,7 +193,7 @@
         <!-- Logo -->
         <div class="px-1 pt-2 flex flex-row items-center">
             <a class="rounded-xl text-xl flex flex-row items-center font-semibold focus:outline-none focus:opacity-80" href="#">
-                <img src="{{ Vite::asset('assets/images/logo/logo.svg') }}" class="w-[30px] h-[30px] mt-2 ml-4 mr-2.5" alt="logo">
+                <img src="{{ asset('assets/images/logo/logo.svg') }}" class="w-[30px] h-[30px] mt-2 ml-4 mr-2.5" alt="logo">
                 <h2 class="font-bold text-[24px]">FitFinity</h2>
             </a>
         </div>

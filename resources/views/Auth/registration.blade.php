@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
     <title>FitFinity | Registration Form</title>
-    <link rel="icon" href="{{ Vite::asset('assets/images/logo/logo.svg') }}"/>
+    <link rel="icon" href="{{ asset('assets/images/logo/logo.svg') }}"/>
 
     <style>
         @layer components {

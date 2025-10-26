@@ -7,7 +7,7 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="icon" href="{{ Vite::asset('assets/images/logo/logo.svg') }}"/>
+    <link rel="icon" href="{{ asset('assets/images/logo/logo.svg') }}"/>
 
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
@@ -23,11 +23,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/bootstrap-5.0.5-alpha.min.css') }}"/>
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/LineIcons.2.0.css') }}"/>
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/animate.css') }}"/>
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/tiny-slider.css') }}"/>
-    <link rel="stylesheet" href="{{ Vite::asset('assets/css/main.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-5.0.5-alpha.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/LineIcons.2.0.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/tiny-slider.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"/>
     <style>
 
         html {
@@ -267,7 +267,7 @@
                 <div class="mx-8 max-w-screen-lg px-2">
                     <nav class="navbar navbar-expand-lg">
                         <a class="-ml-5 navbar-brand d-flex align-items-center" href="#">
-                            <img style="width: 40px" src="{{ Vite::asset('assets/images/logo/MainLogosvg.svg') }}"
+                            <img style="width: 40px" src="{{ asset('assets/images/logo/MainLogosvg.svg') }}"
                                  alt="Logo"/>
                             <div class="ml-2">
                                 <h4 style="display: inline; font-size: 1rem;">
@@ -350,7 +350,7 @@
                 <div class="mx-auto max-w-screen-lg px-2">
                     <nav class="navbar navbar-expand-lg">
                         <a class="-ml-20 mt-1 -mb-1 navbar-brand d-flex align-items-center" href="#">
-                            <img style="width: 40px" src="{{ Vite::asset('assets/images/logo/MainLogosvg.svg') }}"
+                            <img style="width: 40px" src="{{ asset('assets/images/logo/MainLogosvg.svg') }}"
                                  alt="Logo"/>
                             <div class="ml-2">
                                 <h4 style="display: inline; font-size: 1rem;">
@@ -414,7 +414,7 @@
                     <span style="font-size: 13px" class="text-gray-700 mb-3">Role: <span class="text-right">{{ $fd -> role_name }}</span></span>
                     <span style="font-size: 13px" class="text-gray-700 mb-3">{{ $fd -> qualifications }}</span>
                 </div>
-                <img class="user-img w-2/5" src="{{ (Str::startsWith($fd->doctor_name, 'U')) ? Vite::asset('assets/images/doctorProfile/maleDr.png') : Vite::asset('assets/images/doctorProfile/femaleDr.png') }}" alt="Doctor Image" />
+                <img class="user-img w-2/5" src="{{ (Str::startsWith($fd->doctor_name, 'U')) ? asset('assets/images/doctorProfile/maleDr.png') : asset('assets/images/doctorProfile/femaleDr.png') }}" alt="Doctor Image" />
             </div>
         @endforeach
     </div>

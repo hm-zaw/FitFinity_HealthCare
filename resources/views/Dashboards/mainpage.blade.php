@@ -6,7 +6,7 @@
     <title>Fitfinity</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="icon" href="{{ Vite::asset('assets/images/logo/logo.svg') }}"/>
+    <link rel="icon" href="{{ asset('assets/images/logo/logo.svg') }}"/>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet"/>
@@ -72,7 +72,7 @@
                 <div class="mx-auto max-w-screen-lg px-2">
                     <nav class="navbar navbar-expand-lg">
                         <a class="-ml-20 navbar-brand d-flex align-items-center" href="#">
-                            <img style="width: 40px" src="{{ Vite::asset('assets/images/logo/MainLogosvg.svg') }}"
+                            <img style="width: 40px" src="{{ asset('assets/images/logo/MainLogosvg.svg') }}"
                                  alt="Logo"/>
                             <div class="ml-2">
                                 <h4 style="display: inline; font-size: 1rem;">
@@ -157,7 +157,7 @@
                 <div class="mx-auto max-w-screen-lg px-2">
                     <nav class="navbar navbar-expand-lg">
                         <a class="-ml-20 mt-1 -mb-1 navbar-brand d-flex align-items-center" href="#">
-                            <img style="width: 40px" src="{{ Vite::asset('assets/images/logo/MainLogosvg.svg') }}"
+                            <img style="width: 40px" src="{{ asset('assets/images/logo/MainLogosvg.svg') }}"
                                  alt="Logo"/>
                             <div class="ml-2">
                                 <h4 style="display: inline; font-size: 1rem;">
@@ -216,7 +216,7 @@
 
 <section class="we-do-section pt-150">
     <div class="shape shape-1">
-        <img src="{{ Vite::asset('assets/images/shapes/shape-1.svg') }}" alt=""/>
+        <img src="{{ asset('assets/images/shapes/shape-1.svg') }}" alt=""/>
     </div>
     <div class="container">
         <div class="row">
@@ -237,7 +237,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="graph mb-60">
-                    <img src="{{ Vite::asset('assets/images/we-do/graph-img.svg') }}" alt=""/>
+                    <img src="{{ asset('assets/images/we-do/graph-img.svg') }}" alt=""/>
                 </div>
             </div>
             <div class="col-lg-3">
@@ -351,7 +351,7 @@
 <!-- ========================= about-section start ========================= -->
 <section id="about" class="about-section pt-120">
     <div class="shape shape-2">
-        <img src="{{ Vite::asset('assets/images/shapes/shape-2.svg') }}" alt=""/>
+        <img src="{{ asset('assets/images/shapes/shape-2.svg') }}" alt=""/>
     </div>
     <div class="container">
         <div class="row">
@@ -374,14 +374,14 @@
         </div>
     </div>
     <div class="about-img text-center">
-        <img src="{{ Vite::asset('assets/images/about/about-img.png') }}" alt=""/>
+        <img src="{{ asset('assets/images/about/about-img.png') }}" alt=""/>
     </div>
 </section>
 
 <!--========================= service-section start ========================= -->
 <section id="services" class="service-section pt-150">
     <div class="shape shape-3">
-        <img src="{{ Vite::asset('assets/images/shapes/shape-3.svg') }}" alt=""/>
+        <img src="{{ asset('assets/images/shapes/shape-3.svg') }}" alt=""/>
     </div>
     <div class="container">
         <div class="row">
@@ -537,7 +537,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="service-item mb-30">
                     <div class="service-icon mb-25">
-                        <img width="20%" src="{{ Vite::asset('assets/images/service/throat.png') }}" alt=""/>
+                        <img width="20%" src="{{ asset('assets/images/service/throat.png') }}" alt=""/>
                     </div>
                     <div class="service-content">
                         <h4>Otolaryngology</h4>
@@ -555,11 +555,11 @@
 <section id="faqs" class="faq-section theme-bg">
     <div class="faq-video-wrapper">
         <div class="faq-video">
-            <img src="{{ Vite::asset('assets/images/faq/faq-img.jpg') }}" alt=""/>
+            <img src="{{ asset('assets/images/faq/faq-img.jpg') }}" alt=""/>
         </div>
     </div>
     <div class="shape">
-        <img src="{{ Vite::asset('assets/images/shapes/shape-8.svg') }}" alt="" class="shape-faq"/>
+        <img src="{{ asset('assets/images/shapes/shape-8.svg') }}" alt="" class="shape-faq"/>
     </div>
     <div class="container">
         <div class="row">
@@ -658,7 +658,7 @@
 </section>
 <!-- ========================= subscribe-section start ========================= -->
 <section id="subscribe" class="subscribe-section pt-100 pb-100 img-bg"
-         style="background-image: url('{{ Vite::asset('assets/images/bg/subscribe-bg.jpg') }}')">
+         style="background-image: url('{{ asset('assets/images/bg/subscribe-bg.jpg') }}')">
     <div class="container">
         <div class="row">
             <div class="col-xl-7">
@@ -720,7 +720,7 @@
 <!-- ========================= blog-section start ========================= -->
 <section id="blog" class="blog-section pt-150">
     <div class="shape shape-7">
-        <img src="{{ Vite::asset('assets/images/shapes/shape-6.svg') }}" alt=""/>
+        <img src="{{ asset('assets/images/shapes/shape-6.svg') }}" alt=""/>
     </div>
     <div class="container">
         <div class="row">
@@ -742,7 +742,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="single-blog mb-30 wow fadeInUp" data-wow-delay=".2s">
                     <div class="blog-img">
-                        <a href="#"><img src="{{ Vite::asset('assets/images/blog/blog-1.png') }}" alt=""/></a>
+                        <a href="#"><img src="{{ asset('assets/images/blog/blog-1.png') }}" alt=""/></a>
                     </div>
                     <div class="blog-content">
                         <h4><a href="#">250+ Medical Tips We Just Had to Share</a></h4>
@@ -757,7 +757,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="single-blog mb-30 wow fadeInUp" data-wow-delay=".4s">
                     <div class="blog-img">
-                        <a href="#"><img src="{{ Vite::asset('assets/images/blog/blog-2.png') }}" alt=""/></a>
+                        <a href="#"><img src="{{ asset('assets/images/blog/blog-2.png') }}" alt=""/></a>
                     </div>
                     <div class="blog-content">
                         <h4><a href="#">100+ Medical Tips We Just Had to Share</a></h4>
@@ -772,7 +772,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="single-blog mb-30 wow fadeInUp" data-wow-delay=".6s">
                     <div class="blog-img">
-                        <a href="#"><img src="{{ Vite::asset('assets/images/blog/blog-3.png') }}" alt=""/></a>
+                        <a href="#"><img src="{{ asset('assets/images/blog/blog-3.png') }}" alt=""/></a>
                     </div>
                     <div class="blog-content">
                         <h4><a href="#">250+ Medical Tips We Just Had to Share</a></h4>
@@ -790,13 +790,13 @@
 
 <!-- ========================= footer start ========================= -->
 <footer class="footer pt-100 img-bg"
-        style="background-image: url('{{ Vite::asset('assets/images/bg/footer-bg.jpg') }}')">
+        style="background-image: url('{{ asset('assets/images/bg/footer-bg.jpg') }}')">
     <div class="container">
         <div class="footer-widget-wrapper">
             <div class="row">
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <div class="footer-widget mb-30">
-                        <a href="#" class="logo"><img src="{{ Vite::asset('assets/images/logo/logo.svg') }}"
+                        <a href="#" class="logo"><img src="{{ asset('assets/images/logo/logo.svg') }}"
                                                       alt=""/></a>
                         <p>
                             Thank you for visiting FitFinity! We are committed to delivering high-quality products and
@@ -871,9 +871,9 @@
 </a>
 
 <!-- ========================= JS here ========================= -->
-<script src="{{ Vite::asset('assets/js/bootstrap.bundle-5.0.0.alpha-min.js') }}"></script>
-<script src="{{ Vite::asset('assets/js/wow.min.js') }}"></script>
-<script src="{{ Vite::asset('assets/js/tiny-slider.js') }}"></script>
-<script src="{{ Vite::asset('assets/js/main.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle-5.0.0.alpha-min.js') }}"></script>
+<script src="{{ asset('assets/js/wow.min.js') }}"></script>
+<script src="{{ asset('assets/js/tiny-slider.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 </html>

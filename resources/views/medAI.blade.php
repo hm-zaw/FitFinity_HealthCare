@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> FitFinity | MedAI Diagnostic Bot </title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="icon" href="{{ Vite::asset('assets/images/logo/logo.svg') }}"/>
+    <link rel="icon" href="{{ asset('assets/images/logo/logo.svg') }}"/>
     <style>
         * {
             font-size: x-large;
@@ -48,9 +48,9 @@
     };
 </script>
 
-<body class="bg-white flex w-full">
-<div id="frontView" class="block wrap_img mt-9 w-1/2 ml-10 p-4">
-    <img class="frontBodyImage" id="frontBodyImage" src="{{ Vite::asset('assets/images/body_img/human-body-front.png') }}" usemap="#front-image-map" alt="Human Body">
+<body class="flex w-full bg-white">
+<div id="frontView" class="block w-1/2 p-4 ml-10 wrap_img mt-9">
+    <img class="frontBodyImage" id="frontBodyImage" src="{{ asset('assets/images/body_img/human-body-front.png') }}" usemap="#front-image-map" alt="Human Body">
 
     <map name="front-image-map" class="front-image-map">
         <area id="headArea" target="" alt="Head" title="Head" href="" coords="176,76,180,73,181,86,189,94,203,99,216,98,226,93,234,86,234,74,240,75,244,65,244,52,237,53,237,32,232,21,223,12,213,8,201,8,189,13,181,22,177,32,177,45,177,53,171,51,170,58,172,68" shape="poly">
@@ -80,11 +80,11 @@
     </map>
 
     <!-- Switch Button to Back View -->
-    <img id="toggleViewButton" class="bottom-2 right-2 left-2 w-20 cursor-pointer border-2 border-green-400 rounded hover:bg-green-200" src="{{ Vite::asset('assets/images/body_img/human-body-back.png') }} " alt="Switch to Back View">
+    <img id="toggleViewButton" class="w-20 border-2 border-green-400 rounded cursor-pointer bottom-2 right-2 left-2 hover:bg-green-200" src="{{ asset('assets/images/body_img/human-body-back.png') }} " alt="Switch to Back View">
 </div>
 
-<div id="backView" class="hidden mt-9 w-1/2 ml-10 p-4">
-    <img id="backBodyImage" class="" src="{{ Vite::asset('assets/images/body_img/human-body-back.png') }}" usemap="#back-image-map" alt="Human Body">
+<div id="backView" class="hidden w-1/2 p-4 ml-10 mt-9">
+    <img id="backBodyImage" class="" src="{{ asset('assets/images/body_img/human-body-back.png') }}" usemap="#back-image-map" alt="Human Body">
 
     <map name="back-image-map">
         <area id="backHeadArea" target="" alt="Head" title="Head" href="" coords="174,74,170,57,171,51,177,51,177,38,180,26,187,16,194,11,208,8,219,11,231,18,238,34,238,51,245,51,245,61,241,75,234,76,225,78,212,81,203,81,191,79,180,76,174,74" shape="poly">
@@ -118,20 +118,20 @@
     </map>
 
     <!-- Switch Button to Front View -->
-    <img id="toggleViewButton" class="top-0 right-2 left-2 w-20 cursor-pointer border-2 border-green-400 rounded hover:bg-green-200" src="{{ Vite::asset('assets/images/body_img/human-body-front.png') }}" alt="Switch to Front View">
+    <img id="toggleViewButton" class="top-0 w-20 border-2 border-green-400 rounded cursor-pointer right-2 left-2 hover:bg-green-200" src="{{ asset('assets/images/body_img/human-body-front.png') }}" alt="Switch to Front View">
 </div>
 
 
 <div class="container mt-6 mr-6 w-[500px] bg-gray-50 md:w-3/5 p-3 rounded-lg shadow-md shadow-gray-400">
-    <h3 class="text-lg font-bold text-center text-gray-700 pb-6">FitFinity MedAI</h3>
-    <div class="w-full flex flex-row justify-center">
+    <h3 class="pb-6 text-lg font-bold text-center text-gray-700">FitFinity MedAI</h3>
+    <div class="flex flex-row justify-center w-full">
         <label for="bodyPart" class="block text-xs pr-1.5 pt-2 font-medium text-gray-700">Clicked area:</label>
         <div class="relative border-b-2 border-gray-400">
-            <input type="text" id="bodyPart" class="pt-2 text-center text-xs text-gray-700 font-semibold bg-transparent focus:ring-0 focus:outline-none w-full" value="general" readonly>
+            <input type="text" id="bodyPart" class="w-full pt-2 text-xs font-semibold text-center text-gray-700 bg-transparent focus:ring-0 focus:outline-none" value="general" readonly>
         </div>
     </div>
 
-    <form id="symptomForm" class="mt-4 mx-4 space-y-3">
+    <form id="symptomForm" class="mx-4 mt-4 space-y-3">
         <div>
             <label for="symptom1" class="block text-xs font-medium text-gray-700">Symptom 1:</label>
             <select id="symptom1" name="symptom1" class="mt-1 block w-full py-1.5 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary text-xs">
@@ -153,10 +153,10 @@
             </select>
         </div>
 
-        <button type="button" onclick="predictDisease()" class="px-2 py-1 bg-green-500 text-white rounded-md shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm">Predict Disease</button>
+        <button type="button" onclick="predictDisease()" class="px-2 py-1 text-sm text-white bg-green-500 rounded-md shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">Predict Disease</button>
     </form>
 
-    <div id="result" class="mt-4 mx-4 space-y-4"></div>
+    <div id="result" class="mx-4 mt-4 space-y-4"></div>
 </div>
 
 
@@ -304,8 +304,8 @@
                 }
 
                 output += `
-            <div class="px-5 py-3 bg-white rounded-lg shadow-md border border-gray-200">
-                <div class="flex justify-between items-center">
+            <div class="px-5 py-3 bg-white border border-gray-200 rounded-lg shadow-md">
+                <div class="flex items-center justify-between">
                     <h3 class="text-xs font-semibold text-gray-900">${result.name.replace(/_/g, ' ')}</h3>
                     <a href='/choose_doctor?disease=${encodeURIComponent(result.name.replace(/_/g, ' '))}&symptoms=${encodedSymptoms}&speciality=${result.speciality}' class="px-4 py-0.5 mt-1 bg-green-500 text-white rounded-md text-xs hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">
                         Find doctor
@@ -314,7 +314,7 @@
                 <div class="mt-2 text-xs text-gray-600">
                     Confidence Level: <span class="font-semibold ml-2.5 text-xs text-gray-900">${confidenceText}</span>
                 </div>
-                <div class="w-full bg-gray-300 rounded-full h-2 mt-1">
+                <div class="w-full h-2 mt-1 bg-gray-300 rounded-full">
                     <div class="h-2 rounded-full ${confidenceColor}" style="width: ${confidence}%;"></div>
                 </div>
             </div>
@@ -360,24 +360,24 @@
     };
 
     const highlightedImages = {
-        head: "{{ Vite::asset('assets/images/body_img/front-head-selected.png') }}",
-        neck: "{{ Vite::asset('assets/images/body_img/front-neck-selected.png') }}",
-        chest: "{{ Vite::asset('assets/images/body_img/front-chest-selected.png') }}",
-        abdomen: "{{ Vite::asset('assets/images/body_img/front-abdomen-selected.png') }}",
-        pelvis: "{{ Vite::asset('assets/images/body_img/front-pelvis-selected.png') }}",
-        thighs: "{{ Vite::asset('assets/images/body_img/front-thighs-selected.png') }}",
-        knees: "{{ Vite::asset('assets/images/body_img/front-knees-selected.png') }}",
-        legs: "{{ Vite::asset('assets/images/body_img/front-legs-selected.png') }}",
-        ankles: "{{ Vite::asset('assets/images/body_img/front-ankles-selected.png') }}",
-        feet: "{{ Vite::asset('assets/images/body_img/front-feet-selected.png') }}",
-        shoulders: "{{ Vite::asset('assets/images/body_img/front-shoulders-selected.png') }}",
-        arms: "{{ Vite::asset('assets/images/body_img/front-arms-selected.png') }}",
-        foreArms: "{{ Vite::asset('assets/images/body_img/front-fore-arms-selected.png') }}",
-        wrists: "{{ Vite::asset('assets/images/body_img/front-wrists-selected.png') }}",
-        hands: "{{ Vite::asset('assets/images/body_img/front-hands-selected.png') }}",
+        head: "{{ asset('assets/images/body_img/front-head-selected.png') }}",
+        neck: "{{ asset('assets/images/body_img/front-neck-selected.png') }}",
+        chest: "{{ asset('assets/images/body_img/front-chest-selected.png') }}",
+        abdomen: "{{ asset('assets/images/body_img/front-abdomen-selected.png') }}",
+        pelvis: "{{ asset('assets/images/body_img/front-pelvis-selected.png') }}",
+        thighs: "{{ asset('assets/images/body_img/front-thighs-selected.png') }}",
+        knees: "{{ asset('assets/images/body_img/front-knees-selected.png') }}",
+        legs: "{{ asset('assets/images/body_img/front-legs-selected.png') }}",
+        ankles: "{{ asset('assets/images/body_img/front-ankles-selected.png') }}",
+        feet: "{{ asset('assets/images/body_img/front-feet-selected.png') }}",
+        shoulders: "{{ asset('assets/images/body_img/front-shoulders-selected.png') }}",
+        arms: "{{ asset('assets/images/body_img/front-arms-selected.png') }}",
+        foreArms: "{{ asset('assets/images/body_img/front-fore-arms-selected.png') }}",
+        wrists: "{{ asset('assets/images/body_img/front-wrists-selected.png') }}",
+        hands: "{{ asset('assets/images/body_img/front-hands-selected.png') }}",
     };
 
-    const defaultImage = "{{ Vite::asset('assets/images/body_img/human-body-front.png') }}";
+    const defaultImage = "{{ asset('assets/images/body_img/human-body-front.png') }}";
 
     // Preload the highlighted images
     Object.values(highlightedImages).forEach(src => {
@@ -459,26 +459,26 @@
     const backRightHandArea = document.getElementById('backRightHandArea');
 
     // Paths to the highlighted images
-    const highlightedBackHeadImage = "{{ Vite::asset('assets/images/body_img/back-head-selected.png') }}";
-    const highlightedBackNeckImage = "{{ Vite::asset('assets/images/body_img/back-neck-selected.png') }}";
-    const highlightedBackBackImage = "{{ Vite::asset('assets/images/body_img/back-back-selected.png') }}";
-    const highlightedBackLoinImage = "{{ Vite::asset('assets/images/body_img/back-loin-selected.png') }}";
-    const highlightedBackButtocksImage = "{{ Vite::asset('assets/images/body_img/back-buttocks-selected.png') }}";
-    const highlightedBackHamstringImage = "{{ Vite::asset('assets/images/body_img/back-hamstrings-selected.png') }}";
-    const highlightedBackKneesImage = "{{ Vite::asset('assets/images/body_img/back-knees-selected.png') }}";
-    const highlightedBackCalvesImage = "{{ Vite::asset('assets/images/body_img/back-calves-selected.png') }}";
-    const highlightedBackAnklesImage = "{{ Vite::asset('assets/images/body_img/back-ankles-selected.png') }}";
-    const highlightedBackSolesImage = "{{ Vite::asset('assets/images/body_img/back-soles-selected.png') }}";
-    const highlightedBackFeetImage = "{{ Vite::asset('assets/images/body_img/back-feet-selected.png') }}";
-    const highlightedBackShouldersImage = "{{ Vite::asset('assets/images/body_img/back-shoulders-selected.png') }}";
-    const highlightedBackArmsImage = "{{ Vite::asset('assets/images/body_img/back-arms-selected.png') }}";
-    const highlightedBackElbowsImage = "{{ Vite::asset('assets/images/body_img/back-elbows-selected.png') }}";
-    const highlightedBackForeArmsImage = "{{ Vite::asset('assets/images/body_img/back-fore-arms-selected.png') }}";
-    const highlightedBackWristsImage = "{{ Vite::asset('assets/images/body_img/back-wrists-selected.png') }}";
-    const highlightedBackHandsImage = "{{ Vite::asset('assets/images/body_img/back-hands-selected.png') }}";
+    const highlightedBackHeadImage = "{{ asset('assets/images/body_img/back-head-selected.png') }}";
+    const highlightedBackNeckImage = "{{ asset('assets/images/body_img/back-neck-selected.png') }}";
+    const highlightedBackBackImage = "{{ asset('assets/images/body_img/back-back-selected.png') }}";
+    const highlightedBackLoinImage = "{{ asset('assets/images/body_img/back-loin-selected.png') }}";
+    const highlightedBackButtocksImage = "{{ asset('assets/images/body_img/back-buttocks-selected.png') }}";
+    const highlightedBackHamstringImage = "{{ asset('assets/images/body_img/back-hamstrings-selected.png') }}";
+    const highlightedBackKneesImage = "{{ asset('assets/images/body_img/back-knees-selected.png') }}";
+    const highlightedBackCalvesImage = "{{ asset('assets/images/body_img/back-calves-selected.png') }}";
+    const highlightedBackAnklesImage = "{{ asset('assets/images/body_img/back-ankles-selected.png') }}";
+    const highlightedBackSolesImage = "{{ asset('assets/images/body_img/back-soles-selected.png') }}";
+    const highlightedBackFeetImage = "{{ asset('assets/images/body_img/back-feet-selected.png') }}";
+    const highlightedBackShouldersImage = "{{ asset('assets/images/body_img/back-shoulders-selected.png') }}";
+    const highlightedBackArmsImage = "{{ asset('assets/images/body_img/back-arms-selected.png') }}";
+    const highlightedBackElbowsImage = "{{ asset('assets/images/body_img/back-elbows-selected.png') }}";
+    const highlightedBackForeArmsImage = "{{ asset('assets/images/body_img/back-fore-arms-selected.png') }}";
+    const highlightedBackWristsImage = "{{ asset('assets/images/body_img/back-wrists-selected.png') }}";
+    const highlightedBackHandsImage = "{{ asset('assets/images/body_img/back-hands-selected.png') }}";
 
     // Path to the default image
-    const defaultBackImage = "{{ Vite::asset('assets/images/body_img/human-body-back.png') }}";
+    const defaultBackImage = "{{ asset('assets/images/body_img/human-body-back.png') }}";
 
     function setHoverEffects(area, highlightedImage) {
         area.addEventListener('mouseover', function() {
@@ -532,13 +532,13 @@
             if (frontView.style.display === 'none' || frontView.style.display === '') {
                 frontView.style.display = 'block';
                 backView.style.display = 'none';
-                toggleButton[0].src = '{{ Vite::asset('assets/images/body_img/human-body-back.png') }}'; // Set image to back view on switch
-                toggleButton[1].src = '{{ Vite::asset('assets/images/body_img/human-body-back.png') }}';
+                toggleButton[0].src = '{{ asset('assets/images/body_img/human-body-back.png') }}'; // Set image to back view on switch
+                toggleButton[1].src = '{{ asset('assets/images/body_img/human-body-back.png') }}';
             } else {
                 frontView.style.display = 'none';
                 backView.style.display = 'block';
-                toggleButton[0].src = '{{ Vite::asset('assets/images/body_img/human-body-front.png') }}'; // Set image to front view on switch
-                toggleButton[1].src = '{{ Vite::asset('assets/images/body_img/human-body-front.png') }}';
+                toggleButton[0].src = '{{ asset('assets/images/body_img/human-body-front.png') }}'; // Set image to front view on switch
+                toggleButton[1].src = '{{ asset('assets/images/body_img/human-body-front.png') }}';
             }
         });
     });
