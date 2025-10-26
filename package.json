@@ -3,7 +3,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build && npm run copy-assets",
+        "build": "vite build && npm run copy-assets && npm run verify-assets",
+        "verify-assets": "node -e \"const fs=require('fs'); console.log('Verifying assets...'); console.log('public/assets exists:', fs.existsSync('public/assets')); try{const files=fs.readdirSync('public/assets/css'); console.log('CSS files:', files);}catch(e){console.log('Error reading CSS dir:', e.message);}\"",
         "copy-assets": "node copy-assets.cjs"
     },
     "devDependencies": {
