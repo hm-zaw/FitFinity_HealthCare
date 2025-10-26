@@ -21,6 +21,13 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-5.0.5-alpha.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/LineIcons.2.0.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/tiny-slider.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
+    
     <!-- Vite compiled assets -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
