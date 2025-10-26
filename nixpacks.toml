@@ -1,6 +1,5 @@
 [phases.setup]
 nixPkgs = ["nodejs-18_x", "php82"]
-cmds = ["curl -o composer.phar https://getcomposer.org/download/latest-stable/composer.phar", "chmod +x composer.phar"]
 
 [phases.build]
 cmds = [
